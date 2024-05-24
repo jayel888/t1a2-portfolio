@@ -1,5 +1,5 @@
 # Overview
-Website about me
+This website is to showcase a bit about me, including my current skills, previous work history, personal blogs and a contact me page.
 
 
 

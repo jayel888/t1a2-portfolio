@@ -3,15 +3,16 @@
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
+    box-sizing: border-box;
 
 }
 body{
     min-height: 100vh;
-    background-image: url(../images/keyboard-bg.jpg);
+    background-image: url(../images/senkei-coverbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 
 .logo {
@@ -20,7 +21,8 @@ body{
 }
 nav {
     background-color: white;
-    /* box-shadow: 3px 3px 5px black; */
+    padding: 10px 30px 10px 0px;
+    
 }
 
 nav ul {
@@ -37,11 +39,12 @@ nav li {
 
 nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: black;
+    font-size: 1em;
 
 }
 
@@ -53,6 +56,7 @@ nav li:first-child{
     margin-right: auto;    
 }
 
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -60,7 +64,7 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.76);
     backdrop-filter: blur(10px);
     display: none;
     flex-direction: column;
@@ -87,12 +91,75 @@ nav li:first-child{
 }
 
 @media screen and (min-width:820px) {
-
+    .contact-btn {
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(124, 124, 124));
+        border-radius: 20px;
+        color: white;
+        
+    }
 }
 
 @media screen and (max-width:430px) {
 .sidebar {
     width: 100%;
+ }
+ .footernav ul{
+    flex-direction: column;
+ }
+ .footernav ul li{
+    width:100%;
+    text-align: center;
+    margin: 5px;
+ }
 }
 
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+
+.footericons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footericons a {
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.footericons a i {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 10px;
+
+}
+
+
+.footericons a i:hover {
+    color: blue;
+}
+
+.footernav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 8px;
+}
+
+.footernav ul a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 12px;
 }
