@@ -13,16 +13,20 @@
  box-sizing: border-box;
 }
 
-
-.background-img {
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* .background-img {
     height: 100vh;
-    background-image: url(../images/jay-zhang-U5HUjuZWJ94-unsplash.jpg);
+    background-image: url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(5px);
-}
+} */
 
+/* Nav Bar Styling */
 nav {
     height: 70px;
     width: 100%;
@@ -30,6 +34,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .logo img {
@@ -65,8 +71,6 @@ nav svg {
     fill: white;
 }
 
-
-
 #sidebar-active {
     display: none;
 }
@@ -76,11 +80,16 @@ nav svg {
     padding: 0 20px;
 }
 
+/* Main Section Styling */
+main {
+    min-height: 100dvh;
+    margin-top: 68px;
+}
+
+/* Footer Styling */
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
     background-color: var(--primary-color);
 }
 

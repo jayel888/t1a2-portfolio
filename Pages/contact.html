@@ -3,14 +3,13 @@
 <head>
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/contact.css">
-    <link rel="icon" href="./images/favicon1.png">
+    <link rel="icon" href="../images/favicon1.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jess Lee's Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="background-img">
     <nav>
         <a class="logo" href="../index.html"><img  src="../images/logo-nobg-white.png"></a>
         <input type="checkbox" id="sidebar-active">
@@ -31,23 +30,74 @@
         </div>
     </nav>
     <main>
-        <h1> Contact</h1>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <p>Please don't hesitate to contact me with any questions. </p>
+            </div>
+            <div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>123 Fake Street<br>Melbourne, 3000<br>Australia</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0402 014 822</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>jess.huangyu.lee@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactform">
+                     <form>
+                        <h2> Send me a message</h2>
+                        <div class="inputbox">
+                            <span>Full Name</span>
+                            <input type="text" name="" required="required">
+                            
+                        </div>
+                        <div class="inputbox">
+                            <span>Email</span>
+                            <input type="text" name="" required="required">
+                        </div>
+                        <div class="inputbox">
+                            <span>Message</span>
+                            <textarea required="required" rows="4"></textarea>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" id="send-btn" value="Send">
+                        </div>
+                     </form>   
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footerbox">
             <div class="footericons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/jayelfit" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/senkeicables/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/jayel888" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jess-lee-a3116324a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="footernav">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./aboutme.html">About Me</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./Pages/aboutme.html">About Me</a></li>
+                    <li><a href="./Pages/projects.html">Projects</a></li>
+                    <li><a href="./Pages/blogs.html">Blogs</a></li>
+                    <li><a href="./Pages/contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footerbottom">
@@ -55,6 +105,5 @@
             </div>
         </div>
     </footer>
-    </div>
 </body>
 </html>
