@@ -1,10 +1,10 @@
 main {
-margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact {
-    position: relative;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,9 +123,11 @@ textarea {
     font-weight: 500;
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:850px) {
     .container {
         flex-direction: column;
+        width: 80%;
+        
     }
     .contactform {
         width: 100%;
@@ -136,6 +138,10 @@ textarea {
 @media screen and (max-width:430px) {
     .contactinfo {
         width: 100%;
-        justify-content: center;
+        justify-content:center;
+        
+    }
+    .container {
+        width: 100%;
     }
 }

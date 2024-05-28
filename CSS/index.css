@@ -13,7 +13,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../images/bg-filtered.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 
@@ -80,77 +80,19 @@ nav svg {
 /* Main Section Styling */
 
 main {
-    margin-top: 75px;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     z-index: -1;
-}
-
-.landing {
-
-}
-
-.landing h1 {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.landing p {
-    font-size: 22px;
-    font-weight: 200;
-    color: white;
-    animation-delay: 0.5s;
-}
-
-.landing a {
-    background:var(--secondary-color);
-    padding: 10px 28px;
-    text-decoration: none;
-    color: rgb(212, 0, 255);
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-    border: 2px solid black;
-    animation-delay: 1s;
-}
-
-
-.portrait-box img {
-    height: 600px;
-    left: 0;
-    background-color: rgb(253, 203, 109);
-    border-radius: 30%;
-    border: 3px solid black;
-    animation-delay: 1.5s;
-}
-
-.animate {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: moveup 0.5s linear forwards;
-}
-
-@keyframes moveup {
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+    flex: 1;
 }
 
 /* Footer Styling */
 footer {
     width: 100%;
-    margin-top: auto;
     background-color: var(--primary-color);
 }
 
 .footericons {
     display: flex;
     justify-content: center;
-
 }
 
 .footericons a {
@@ -200,14 +142,6 @@ footer {
     background-color: black;
 }
 
-.background {
-    background-image: url(./images/senkei-coverbg.jpg);
-}
-
-/* Styling for Desktop */
-@media screen and (min-width:850px) {
-
-}
 
 /* Styling for Tablet devices */
 @media screen and (max-width: 850px) {
@@ -249,15 +183,10 @@ footer {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 9;
+        z-index: 99;
     }
 
-    main{
-        flex-direction: column;
-    }
 }
-
-
 
 /* Styling for Phone Devices */
 @media screen and (max-width: 430px) {
