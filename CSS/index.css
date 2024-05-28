@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root {
-    --primary-color: #202020;
-    --secondary-color: #A3FFEE;
-    --accent-color: #E393FF;
-    font-family: Inter, Arial, Helvetica, sans-serif;
-}
-
 * {
+ --primary-color: #202020;
+ --secondary-color: #A3FFEE;
+ --accent-color: #E393FF;
+ font-family: Inter, Arial, Helvetica, sans-serif;
  margin: 0;
  padding: 0;
  box-sizing: border-box;
@@ -57,7 +54,6 @@ nav a {
     text-decoration: none;
     color:white;
     font-size: 24px;
-    font-weight: 500;
     transition: transform 0.3s;
 }
 
@@ -85,6 +81,63 @@ nav svg {
 
 main {
     margin-top: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+.landing {
+
+}
+
+.landing h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+    animation-delay: 0.5s;
+}
+
+.landing a {
+    background:var(--secondary-color);
+    padding: 10px 28px;
+    text-decoration: none;
+    color: rgb(212, 0, 255);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    animation-delay: 1s;
+}
+
+
+.portrait-box img {
+    height: 600px;
+    left: 0;
+    background-color: rgb(253, 203, 109);
+    border-radius: 30%;
+    border: 3px solid black;
+    animation-delay: 1.5s;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 /* Footer Styling */
@@ -128,6 +181,7 @@ footer {
     list-style: none;
     justify-content: center;
     padding: 8px;
+    margin-bottom: 10px;
 }
 
 .footernav ul a {
@@ -140,9 +194,10 @@ footer {
 .footerbottom {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 7px;
     font-size: 12px;
     color: white;
+    background-color: black;
 }
 
 .background {
@@ -164,9 +219,8 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        z-index: 10;
+        z-index: 100;
         width: 250px;
-        opacity: 85%;
         background-color: var(--primary-color);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.4);
         transition: 0.7s ease-out;
@@ -197,7 +251,13 @@ footer {
         left: 0;
         z-index: 9;
     }
+
+    main{
+        flex-direction: column;
+    }
 }
+
+
 
 /* Styling for Phone Devices */
 @media screen and (max-width: 430px) {
