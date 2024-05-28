@@ -44,8 +44,6 @@ margin-top: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .box {
@@ -83,6 +81,10 @@ margin-top: auto;
 .contactform .inputbox {
     width: 100%;
     margin-top: 10px;
+}
+
+input, textarea {
+    border-radius: 5px;
 }
 
 .inputbox input, .inputbox textarea {
