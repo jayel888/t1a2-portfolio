@@ -1,12 +1,15 @@
+main {
+margin-top: auto;
+}
+
 .contact {
-    min-height: 100vh;
+    position: relative;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: url(../images/background-image.jpg); */
-    background-size: cover;
-    
+    color: white;
 }
 
 .content {
@@ -14,19 +17,24 @@
     text-align: center;
 }
 
-.content h2 {
-    font-size: 36px;
-    font-weight: 500;
+.content h1 {
+    font-size: 3em;
+
 }
 
 .content p {
-    font-size: 36px;
-    font-weight: 300;
+    padding-top: 40px ;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.content p span {
+    font-weight: 600;
 }
 
 .container{
-    width: 100%;
     display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -36,6 +44,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+
+
 }
 
 .box {
@@ -61,12 +71,13 @@
 }
 
 .contactform {
-    width: 40%;
+    width: 60%;
     padding: 40px;
 }
 
-.contactform h2 {
-    font-size: 32px;
+.contactform h3 {
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .contactform .inputbox {
@@ -83,15 +94,25 @@
     border-bottom: 2px solid var(--secondary-color);
     outline: none;
     resize: none;
+    background: white;
+    opacity: 0.5;
 }
+
 
 textarea {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 #send-btn {
-    border: 2px solid var(--accent-color);
-    background: none;
+    border: none;
+    background: var(--accent-color);
     font-weight: 600;
+    opacity: 0.8;
+}
+
+#send-btn:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    opacity: 1;
 }
 
 .contactform .inputbox span {

@@ -16,15 +16,14 @@
 body {
     display: flex;
     flex-direction: column;
-}
-/* .background-img {
     height: 100vh;
-    background-image: url(../images/background-image.jpg);
+    background-image: url(../images/bg-filtered.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(5px);
-} */
+    backdrop-filter: blur(7px);
+}
+
 
 /* Nav Bar Styling */
 nav {
@@ -81,8 +80,8 @@ nav svg {
 }
 
 /* Main Section Styling */
+
 main {
-    min-height: 100dvh;
     margin-top: 68px;
 }
 
