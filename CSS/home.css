@@ -47,10 +47,11 @@ section {
 .portrait-box img {
     height: 500px;
     left: 0;
-    background-color: rgb(253, 203, 109);
-    border-radius: 30%;
+    background-color: rgb(255, 206, 114);
+    border-radius: 50%;
     border: 3px solid black;
     animation-delay: 1.5s;
+    box-shadow: 15px 15px 30px rgb(17, 17, 17) ;
 }
 
 .animate {
