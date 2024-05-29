@@ -90,6 +90,7 @@ section {
 }
 
 @media screen and (max-width:430px) {
+    
     .landing h1 {
         font-size: 2em;
     }
