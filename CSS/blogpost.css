@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+section img {
+    height:600px;
+}

@@ -1,12 +1,38 @@
 main {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section {
+    display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+header h1 span {
+    color: rgb(255, 200, 97);
+}
+header p {
+    margin-top: 30px;
+    color: white;
+    width: 50%;
+}
+
 .card {
-    width: 325px;
+    width: 370px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -17,8 +43,8 @@ main {
 }
 
 .card img {
+    height: 400px;
     width: 100%;
-    height: auto;
 }
 
 .card-content {
@@ -50,4 +76,19 @@ p {
 .btn:hover {
     transform: translateX(5px);
     color: var(--secondary-color);
+}
+
+@media screen and (max-width: 850px){
+    header {
+        margin-top: 40px;
+    }
+    header p {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 430px){
+    header p {
+        width: 90vw;
+    }
 }
