@@ -5,6 +5,7 @@ main {
 .hero {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 5em;
     padding: 30px 15%;
 }
@@ -49,7 +50,7 @@ main {
 }
 
 .hero-content a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .portrait-box img {
@@ -74,9 +75,7 @@ main {
     }
 }
 
-@media screen and (min-width:850px) {
 
-}
 @media screen and (max-width:850px) {
     .hero{
         flex-direction: column;
