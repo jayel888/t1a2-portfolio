@@ -35,7 +35,7 @@ main {
 
 .container{
     display: flex;
-    width: 50%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -122,6 +122,12 @@ textarea {
     font-size: 20px;
     margin: 10px 0;
     font-weight: 500;
+}
+
+@media screen and (min-width:1400px) {
+    .container {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:850px) {
