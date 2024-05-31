@@ -20,7 +20,10 @@ main {
 
 .content h1 {
     font-size: 3em;
+}
 
+.content h1 span {
+    color: rgb(231, 154, 255);
 }
 
 .content p {
@@ -99,7 +102,6 @@ input, textarea {
     resize: none;
     background: white;
 }
-
 
 textarea {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
