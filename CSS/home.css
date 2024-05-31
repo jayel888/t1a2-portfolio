@@ -2,6 +2,14 @@ main {
     display: flex;
 }
 
+body {
+    background-image: url(../images/bg-filtered.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -21,10 +29,12 @@ main {
     margin-bottom: 3%;
 }
 
-.hero-content h1 span {
+.hero-content h1 #jess {
     color: var(--secondary-color);
 }
-
+.hero-content h1 #period {
+    color: rgb(255, 199, 96);
+}
 .hero-content h3 {
     animation-delay: 0.5s;
 }
@@ -55,7 +65,8 @@ main {
 
 .portrait-box img {
     height: 500px;
-    border: 2px solid rgb(255, 214, 137);
+    background-image: linear-gradient(red, yellow);
+    border: 2px solid black;
     border-radius: 50%;
     animation-delay: 2s;
     box-shadow: 4px 4px 10px rgb(17, 17, 17) ;
