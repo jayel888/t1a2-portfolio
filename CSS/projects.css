@@ -84,6 +84,7 @@ p {
 .btn:hover {
     transform: translateX(5px);
     color: var(--secondary-color);
+    cursor: default;
 }
 
 /* Styling for Tablet Devices */
