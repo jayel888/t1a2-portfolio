@@ -11,7 +11,7 @@ GitHub Repository: https://github.com/jayel888/t1a2-portfolio
 
 ## Purpose
 
-I have created this website as a format to showcase my skills and aptitude as an aspiring Web Developer! I have proudly coded and styled all web pages myself only utilising HTML and CSS. On my website you can explore content like future projects, a brief rundown of my education and employment history, blog posts and a page to cotact me directly! Please read below to familiarise yourself with the functionality of my website. 
+I have created this website as a format to showcase my skills and aptitude as an aspiring Web Developer! I have proudly coded and styled all web pages myself only utilising HTML and CSS. I have designed my website with my primary target audience being prospective employers who may want to work/collaborate with me, however I have attempted to make it pleasing for everyone to view! On my website you can explore content like future projects, a brief rundown of my education and employment history, blog posts and a page to cotact me directly! Please read below to familiarise yourself with the functionality of my website. 
 
 ## Website Functionality and Features
 
@@ -59,14 +59,48 @@ On my Blog page, you can clearly view each separate blog that increases in size 
 I attempted to design a simple yet modern looking contact me page. Again using flexbox to move everything central of the page, you will see personal details shown on the left with icons and a input field to contact me directly on the right.
 When displayed on smaller devices, the layout switches to a column direction, with the input fields changing size to utilise blank space. 
 
+## Wireframes
 
+### Phone Size
 
-A link (URL) to your published portfolio website
-A link to your GitHub repo
-Description of your portfolio website, including,
-Purpose
-Functionality / features
-Screenshots
-Sitemap
-Target audience
-Tech stack (e.g. html, css, deployment platform, etc)
+![Phone Size Home Page](./docs/wf-home-phone.png)
+![Phone Size About Me Page](./docs/wf-about-phone.png)
+![Phone Size Projects Page](./docs/wf-project-phone.png)
+![Phone Size Blogs Page](./docs/wf-blogs-phone.png)
+![Phone Size Contact Page](./docs/wf-contact-phone.png)
+
+### Tablet
+
+![Tablet Size Home Page](./docs/wf-home-tablet.png)
+![Tablet Size About Me Page](./docs/wf-about-tablet.png)
+![Tablet Size Projects Page](./docs/wf-projects-tablet.png)
+![Tablet Size Blogs Page](./docs/wf-blogs-tablet.png)
+![Tablet Size Contact Page](./docs/wf-contact-tablet.png)
+
+### Desktop
+
+![Desktop Size Home Page](./docs/wf-home-desktop.png)
+![Desktop Size About Me Page](./docs/wf-about-desktop.png)
+![Desktop Size Projects Page](./docs/wf-projects-desktop.png)
+![Desktop Size Blogs Page](./docs/wf-blogs-desktop.png)
+![Desktop Size Contact Page](./docs/wf-contact-desktop.png)
+![Desktop Blog Post Page](./docs/wf-blogpost-desktop.png)
+
+## Sitemap
+
+![Sitemap](./docs/sitemap.png)
+
+Above is a screenshot of the sitemap I created at the start of this assignment. It clearly states the intended layout of my website and has been followed with the exception of my resume being on the Home Page rather than About me Page.
+I created this using Figma intead of draw io so I could have all my pages on the same Figma Project. 
+
+## Tech stack
+
+- HTML
+- CSS - Styling and Effects
+- Figma - wireframes and sitemap
+- Trello - project planning
+- Font Awesome - Icons
+- ColorKit.co - Colour Palette and contract checker
+- Netlify - Deployment
+- GitHub
+- w3schools.com - HTML and CSS lessons
