@@ -1,21 +1,26 @@
+/* Styling for blog posts */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .blog-head {
     background: rgba(105, 105, 105, 0.5);
     text-align: center;
-    width: 70dvw;
-    border-radius: 10px;
+    width: 60dvw;
+    border-radius: 8px;
     color: white;
     margin-top: 30px;
 }
 
 .blog-head h1 {
     font-size: 52px;
+}
+
+.blog-head h1 span {
+    color: var(--secondary-color);
 }
 
 .blog-head h3 {
@@ -32,7 +37,7 @@ main {
     background: rgba(105, 105, 105, 0.5);
     padding: 20px;
     margin: 20px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
     width: 95dvw;
 
@@ -42,9 +47,8 @@ figure {
     display: block;
     text-align: center;
     float: right;
-    padding-left: 20px;
     padding-bottom: 5px;
-    
+    padding-left: 20px;
 }
 
 figure img {
@@ -54,4 +58,18 @@ figure img {
 
 figure figcaption {
     font-size: 12px;
+}
+
+/* Styling for tablet and mobile devices */
+@media screen and (max-width:850px) {
+    .blog-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    figure {
+        padding-left: 0px;
+    }
 }
