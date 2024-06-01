@@ -82,31 +82,31 @@ main {
     }
 }
 
-
+/* Styling for Tablet Devices */
 @media screen and (max-width:850px) {
     .hero{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100vw;
         margin:0 50px;
         padding: 0;
+        gap: 2em;
     }
     .hero-content {
         justify-content: center;
         align-items: center;
+        margin-top: 100px;
     }
     .portrait-box img{
         height: 400px;
-        /* margin-bottom: 50px; */
     }
     .hero-content h1 {
         font-size: 2em;
     }
 }
 
+/* Styling for Phone Devices */
 @media screen and (max-width:430px) {
-    
     .hero-content h1 {
         font-size: 2em;
     }
@@ -116,5 +116,9 @@ main {
     }
     .portrait-box img{
         height: 300px;
+    }
+
+    .hero-content {
+        text-align: center;
     }
 }

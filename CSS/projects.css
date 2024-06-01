@@ -79,9 +79,6 @@ p {
 }
 
 @media screen and (max-width: 850px){
-    header {
-        margin-top: 40px;
-    }
     header p {
         width: 70vw;
     }
