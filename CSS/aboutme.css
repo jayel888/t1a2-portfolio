@@ -1,8 +1,9 @@
+/* Utilising Grid for about me page design */
 main {
     display: grid;
 }
 
-
+/* Defining grid layout */
 .container {
     height: 100%;
     display: grid;
@@ -10,10 +11,12 @@ main {
     grid-template-rows: repeat(12, 1fr);
     
 }
+/* accent color for heading */
 .container h1 span {
     color: rgb(248, 250, 119);
 }
 
+/* Styling for cover photo, which turns into main background in smaller displays */
 .cover-photo {
     grid-row: 1 /6;
     grid-column: 1 / -1;
@@ -31,6 +34,7 @@ h2 {
     color: var(--secondary-color);
 }
 
+
 .container h1 {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -47,8 +51,7 @@ h2 {
     margin: 0px 50px;
 }
 
-
-
+/* Styling for main content container, making it overlap with cover photo */
 .content-container {
     display: flex;
     flex-direction: column;
@@ -61,16 +64,13 @@ h2 {
     color: white;
 }
 
+/* Styling to for spacing between elements */
 .content-container div {
     margin: 30px 20px;
 }
 
 .content-container div h2 {
     margin-bottom: 10px;
-}
-
-.education {
-    flex: 1;
 }
 
 .education ul {
@@ -82,10 +82,6 @@ h2 {
     margin: 5px
 }
 
-.work {
-    flex: 1;
-}
-
 .work ul {
     margin-bottom: 20px;
 }
@@ -95,9 +91,6 @@ h2 {
     list-style: none;
 }
 
-.skill {
-    flex: 1;
-}
 
 .skills ul {
     list-style: none;
@@ -109,6 +102,18 @@ h2 {
 
 /* Styling for tablet devices and smaller */
 @media screen and (max-width:850px) {
+    /* change background image to cover photo for About Me Page */
+    body {
+    background-image: url(../images/nautilus-kb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    background-blend-mode: overlay;
+    background-color: rgb(59, 59, 59);
+    }
+
+    /* change from grid to flex in smaller displays */
     main {
         display: flex;
         flex-direction: column;
@@ -121,14 +126,6 @@ h2 {
     }
     .container h1 {
         font-size: 44px;
-    }
-
-    .cover-photo {
-        background-size: cover;
-        background-image: url(../images/insta\ 10.jpg);
-        background-position: center;
-        text-align: center;
-        background-blend-mode: overlay;
     }
 
     .content-container {

@@ -1,9 +1,11 @@
+/* Styling for Contact Page, using flexbox to center items in middle of page */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* using flexbox to display contact me content */
 .contact {
     display: flex;
     justify-content: center;
@@ -22,10 +24,12 @@ main {
     font-size: 3em;
 }
 
+/* accent color for title */
 .content h1 span {
     color: rgb(231, 154, 255);
 }
 
+/* styling for paragraph under title */
 .content p {
     padding-top: 40px ;
     font-size: 1.5em;
@@ -36,6 +40,7 @@ main {
     font-weight: 600;
 }
 
+/* Styling and sizing for personal information and contact form */
 .container{
     display: flex;
     width: 80%;
@@ -56,6 +61,7 @@ main {
     display: flex;
 }
 
+/* styling for the icons next to personal information */
 .icon{
     width: 60px;
     height: 60px;
@@ -72,6 +78,7 @@ main {
     flex-direction: column;
 }
 
+/* contact form styling */
 .contactform {
     width: 60%;
     padding: 40px;
@@ -103,9 +110,12 @@ input, textarea {
     background: white;
 }
 
+/* change font when typing in textbox */
 textarea {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
+
+/* button styling */
 #send-btn {
     border: none;
     background: var(--accent-color);
@@ -113,6 +123,7 @@ textarea {
     opacity: 0.8;
 }
 
+/* button hover styling, made opacity 1 so it gets brighter */
 #send-btn:hover {
     cursor: pointer;
     background-color: var(--accent-color);
@@ -126,12 +137,14 @@ textarea {
     font-weight: 500;
 }
 
+/* styling for large desktop screens, so there is less empty space */
 @media screen and (min-width:1400px) {
     .container {
         width: 60%;
     }
 }
 
+/* styling for tablet devices */
 @media screen and (max-width:850px) {
     .container {
         flex-direction: column;
@@ -144,6 +157,7 @@ textarea {
 
 }
 
+/* styling for phone devices */
 @media screen and (max-width:430px) {
     .contactinfo {
         width: 100%;

@@ -1,5 +1,9 @@
+/* Main styling for all pages */
+
+/* imported font Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* Root styling */
 * {
     --primary-color: #202020;
     --secondary-color: #A3FFEE;
@@ -10,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* background image styling */
 body {
     display: flex;
     flex-direction: column;
@@ -32,13 +37,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: sticky;
-    /* background-color: var(--primary-color); */
 }
 
 .logo img {
     height: 80px;
 }
 
+/* styling for nav links */
 .links-container {
     height: 100%;
     width: 100%;
@@ -59,17 +64,18 @@ nav a {
     transition: transform 0.3s;
 }
 
-
+/* styling for nav link hover effects */
 .links-container a:hover {
     color: var(--secondary-color);
     transform: translateY(-5px);
 }
 
-
+/* styling for svg icons */
 nav svg {
     fill: white;
 }
 
+/* sidebar not active unless correct screensize */
 #sidebar-active {
     display: none;
 }
@@ -109,7 +115,7 @@ footer {
     transition: transform 0.3s;
 }
 
-
+/* hover effects for footer icons */
 .footericons a i:hover {
     color: var(--accent-color);
     transform: translateY(-5px);
@@ -146,7 +152,7 @@ footer {
 
 /* Styling for Tablet devices */
 @media screen and (max-width: 850px) {
-   /* Responsive Nav bar styling */
+   /* Responsive pop up Nav bar styling using checkbox */
     .links-container {
         display: none;
         flex-direction: column;
@@ -170,10 +176,12 @@ footer {
         width: 100%;
         justify-content: flex-start;
     }
+
     .open-sidebar-btn, .close-sidebar-btn {
         display: block;
         padding: 20px;
     }
+    /* styling pseudo class for checked */
     #sidebar-active:checked ~ .links-container{
         display: flex;
         right: 0;

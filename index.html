@@ -10,19 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Header Code, including Sticky Navbar -->
     <header>
         <nav>
+            <!-- Logo image, top left -->
             <a class="logo" href="#"><img  src="./images/logo-nobg-white.png"></a>
+            <!-- using a checkbox for a pop up nav bar for smaller displays -->
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-btn">
+                <!-- using SVG for checkbox icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> 
             </label>
+            <!-- overlay so you can press/click anywhere to close nav bar -->
             <label id="overlay" for="sidebar-active"></label>
             <div class="links-container">
                 <label for="sidebar-active" class="close-sidebar-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
-
+                <!-- Navigation Links -->
                 <a href="#">Home</a>
                 <a href="./Pages/aboutme.html">About Me</a>
                 <a href="./Pages/projects.html">Projects</a>
@@ -31,27 +36,36 @@
             </div>
         </nav>
     </header>
+    <!-- Code for main body of page -->
     <main>
+        <!-- Hero Section of Home Page -->
         <section class="hero">
             <div class="hero-content">
                 <h1 class="animate"> Hi, I'm <span id="jess">Jess</span> Lee<span id="period">.</span></h1>
                 <h3 class="animate"></h3>
-                <p class="animate">Welcome to my portfolio website to showcase all my work related to becoming a web developer!</p>
+                <p class="animate">Welcome to my portfolio website, a curated space where I proudly present my journey and creations as I pursue my path towards becoming a full stack web developer! 
+                <br><br>Click below to view my resume.
+                </p>
+                <!-- Link to download my Resume -->
                 <a href="./resume.pdf" target="_blank" class="animate">Download Resume</a>
             </div>
+            <!-- Photo of me -->
         <div class="portrait-box">
             <img src="./images/home-image.png" alt="Self Portrait Photo" class="animate">
         </div>
     </section>
     </main>
+    <!-- Code for Footer -->
     <footer>
         <div class="footerbox">
+            <!-- Using Icons to link my socials -->
             <div class="footericons">
                 <a href="https://www.facebook.com/jayelfit" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/senkeicables/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/jayel888" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jess-lee-a3116324a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+            <!-- Navigation bar in footer to access all pages -->
             <div class="footernav">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -61,6 +75,7 @@
                     <li><a href="./Pages/contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Copyright element -->
             <div class="footerbottom">
                 <p>Designed by Jess Lee, 2024 &copy;</p>
             </div>

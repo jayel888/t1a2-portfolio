@@ -1,11 +1,13 @@
 /* Styling for blog posts */
 
+/* using display flex for all blog posts */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* styling for blog post header */
 .blog-head {
     background: rgba(105, 105, 105, 0.5);
     text-align: center;
@@ -33,6 +35,7 @@ main {
     padding-bottom: 5px;
 }
 
+/* styling for blog post body */
 .blog-body {
     background: rgba(105, 105, 105, 0.5);
     padding: 20px;
@@ -43,6 +46,7 @@ main {
 
 }
 
+/* image styling */
 figure {
     display: block;
     text-align: center;

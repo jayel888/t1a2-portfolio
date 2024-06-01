@@ -1,7 +1,9 @@
+/* Seperate stylesheet for home page so it doesn't disrupt other pages */
 main {
     display: flex;
 }
 
+/* Styling for main content */
 .hero {
     display: flex;
     align-items: center;
@@ -21,6 +23,7 @@ main {
     margin-bottom: 3%;
 }
 
+/* accent color for title */
 .hero-content h1 #jess {
     color: var(--secondary-color);
 }
@@ -31,13 +34,15 @@ main {
     animation-delay: 0.5s;
 }
 
+/* paragraph styling */
 .hero-content p {
-    font-size: 18px;
+    font-size: 22px;
     margin: 25px 0 30px;
     animation-delay: 1s;
 
 }
 
+/* styling for the Resume download button */
 .hero-content a {
     background:var(--primary-color);
     padding: 10px 28px;
@@ -50,15 +55,15 @@ main {
     width: 240px;
     background-color: var(--accent-color);
     font-weight: 600;
-    transition: transform 0.3s;
 }
 
+/* hover effects for button */
 .hero-content a:hover {
     color: var(--accent-color);
     background-color: var(--primary-color);
-    transform: translateY(-5px);
 }
 
+/* Profile picture styling */
 .portrait-box img {
     height: 500px;
     background-image: linear-gradient(rgb(255, 255, 158), rgb(255, 159, 80));
@@ -68,6 +73,7 @@ main {
     box-shadow: 4px 4px 10px rgb(17, 17, 17) ;
 }
 
+/* Animation effects to hero-content */
 .animate {
     opacity: 0;
     transform: translateY(30px);
@@ -85,6 +91,7 @@ main {
 /* Styling for Tablet Devices */
 @media screen and (max-width:850px) {
     .hero{
+        /* change flex direction to column as screen gets narrower */
         flex-direction: column;
         align-items: center;
         width: 100vw;
