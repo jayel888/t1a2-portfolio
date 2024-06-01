@@ -71,6 +71,9 @@ main {
 .education ul {
     list-style: none;
 }
+.education ul li {
+    margin-top: 5px;
+}
 
 .work {
     flex: 1;
@@ -85,4 +88,8 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width:430px) {
+    
 }
